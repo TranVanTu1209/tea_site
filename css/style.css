@@ -1,0 +1,38 @@
+/* general */
+
+
+section {
+  height: 90vh;
+  display: flex;
+}
+
+section aside.left-content {
+  width: 200px;
+
+}
+
+section aside.left-content ul {
+  height: 100vh;
+  padding-top: 170px;
+}
+
+section aside.left-content .navbar li a {
+  color: #fff;
+}
+
+section aside.left-content .navbar li.dropdown .dropdown-menu a:hover {
+  background-color: #0E6F38;
+}
+
+section aside.left-content .navbar li a:hover {
+  color: #F3DC0B;
+}
+
+/* utilities class */
+.bg-navbar {
+  background-color: #0E6F38;
+}
+
+.current {
+  color: #F3DC0B;
+}
