@@ -12,9 +12,13 @@
 input[type="date"] {
   border-radius: 20px;
   border: 1px #111 solid;
-  padding: 5px;
+  padding: 10px;
   height: 35px;
   outline: none;
+}
+
+table {
+  border-radius: 3px;
 }
 
 table .tfoot-light {
@@ -25,6 +29,13 @@ table tbody a {
   color: blue;
 }
 
+a.btn-light {
+  color: #111;
+}
+
+a.btn-light:hover {
+  color: #111;
+}
 
 /* admin -home page */
 section#home-page-admin {
@@ -91,11 +102,27 @@ section#home-page-admin main.right-content .list-customer-order-details .form-gr
 }
 
 /* order details page */
-#create-new-order, .order {
+#create-new-order,
+.order {
   background-color: #0E6F38;
   height: 100vh;
   color: #fff;
 }
+
 .order .order-header .order-header-right input {
   height: 30px;
+}
+
+.order .order-header input[type="date"] {
+  border: none;
+
+}
+
+.order .modal {
+  width: 40%;
+  margin: 0.5rem 5rem;
+}
+
+#change-order .order-footer .modal {
+  margin-top: 400px;
 }
