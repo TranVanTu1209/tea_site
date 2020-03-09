@@ -1,38 +1,101 @@
-/* general */
-
-
-section {
-  height: 90vh;
-  display: flex;
-}
-
-section aside.left-content {
-  width: 200px;
-
-}
-
-section aside.left-content ul {
-  height: 100vh;
-  padding-top: 170px;
-}
-
-section aside.left-content .navbar li a {
-  color: #fff;
-}
-
-section aside.left-content .navbar li.dropdown .dropdown-menu a:hover {
-  background-color: #0E6F38;
-}
-
-section aside.left-content .navbar li a:hover {
-  color: #F3DC0B;
-}
-
 /* utilities class */
 .bg-navbar {
   background-color: #0E6F38;
 }
 
+/* general */
 .current {
   color: #F3DC0B;
+}
+
+.search-box,
+input[type="date"] {
+  border-radius: 20px;
+  border: 1px #111 solid;
+  padding: 5px;
+  height: 35px;
+  outline: none;
+}
+
+table .tfoot-light {
+  background-color: #eee;
+}
+
+table tbody a {
+  color: blue;
+}
+
+
+/* admin -home page */
+section#home-page-admin {
+  height: 100vh;
+  display: flex;
+}
+
+section#home-page-admin aside.left-content {
+  width: 250px;
+}
+
+section#home-page-admin aside.left-content ul {
+  height: 100vh;
+  padding-top: 170px;
+}
+
+a {
+  color: #fff;
+}
+
+a[type="button"] {
+  color: #fff;
+}
+
+section#home-page-admin aside.left-content .navbar li.dropdown .dropdown-menu a {
+  color: #fff;
+}
+
+section#home-page-admin aside.left-content .navbar li.dropdown .dropdown-menu a:hover {
+  background-color: #0E6F38;
+  color: #F3DC0B;
+}
+
+section#home-page-admin aside.left-content .navbar li a:hover {
+  color: #F3DC0B;
+}
+
+section#home-page-admin main.right-content .list-customer-header,
+section#home-page-admin main.right-content .list-customer-order-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#home-page-admin main.right-content {
+  margin-left: 5rem;
+}
+
+section#home-page-admin main.right-content .list-customer-header .search-box {
+  margin-left: 300px;
+}
+
+section#home-page-admin main.right-content .add-new-customer .modal {
+  width: 500px;
+  margin: 2rem auto;
+  margin-left: 30%;
+}
+
+/* admin details customer page */
+
+section#home-page-admin main.right-content .list-customer-order-details .form-group {
+  margin-left: 150px;
+  align-self: center;
+}
+
+/* order details page */
+#create-new-order, .order {
+  background-color: #0E6F38;
+  height: 100vh;
+  color: #fff;
+}
+.order .order-header .order-header-right input {
+  height: 30px;
 }

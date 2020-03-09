@@ -49,7 +49,7 @@
 					</ul>
 				</nav>
 			</aside>
-			<main class="right-content p-3 list-customer-content">
+			<main class="right-content p-3 list-details-order-customer">
 				<div class="container">
 					<!-- user info section -->
 					<div class="user-info">
@@ -62,35 +62,42 @@
 							Quản trị viên
 						</div>
 					</div>
-					<div class="list-customer-header mt-4 d-flex">
-						<h2>Danh sách nông hộ</h2>
+					<div class="list-customer-order-details mt-4 d-flex">
+						<h3>
+							<span class="customer-name">Danh sách đơn - Nông hộ A </span>-
+							<span class="customer-address"> Thôn A</span>
+						</h3>
 
-						<input
-							type="text"
-							class="search-box search-box-list-customer"
-							id=""
-							placeholder="Tìm kiếm theo tên"
-						/>
+						<div class="form-group">
+							<label for="">Ngày</label>
+							<input
+								type="date"
+								class="search-box search-box-list-order"
+								name=""
+								id=""
+								placeholder="Tìm kiếm theo ngày"
+							/>
+						</div>
 					</div>
-					<!-- table info section -->
-					<div class="customer-table mt-3">
+					<!-- list order table -->
+					<div class="list-order-table mt-3">
 						<table class="table text-center">
 							<thead class="thead-dark">
 								<tr>
 									<th>
-										Nông hộ
+										Mã đơn
 									</th>
 									<th>
-										Địa chỉ
+										Ngày giao dịch
 									</th>
 									<th>
-										Số điện thoại
-									</th>
-									<th>
-										Tổng khối lượng
+										Khối lượng
 									</th>
 									<th>
 										Thành tiền
+									</th>
+									<th>
+										Còn nợ
 									</th>
 									<th>
 										Chi tiết
@@ -100,127 +107,76 @@
 							<tbody>
 								<tr>
 									<td>
-										Nông hộ A
+										#f475834
 									</td>
-									<td>Thôn A</td>
-									<td>0837462632</td>
-									<td>4000 <span class="mass-digit">kg</span></td>
+									<td>3/9/2020</td>
+									<td>200<span class="mass-digit">kg</span></td>
 									<td>20.000.000đ</td>
+									<td class="text-danger">10.000.000đ</td>
 									<td><a href="customer_details.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										Nông hộ B
+										#f753363
 									</td>
-									<td>Thôn B</td>
-									<td>0837462632</td>
-									<td>5000 <span class="mass-digit">kg</span></td>
+									<td>3/9/2020</td>
+									<td>200<span class="mass-digit">kg</span></td>
 									<td>20.000.000đ</td>
-									<td><a href="#">View</a></td>
+									<td class="text-danger">10.000.000đ</td>
+									<td><a href="customer_details.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										Nông hộ C
+										#f753363
 									</td>
-									<td>Thôn C</td>
-									<td>0837462632</td>
-									<td>3000 <span class="mass-digit">kg</span></td>
+									<td>3/9/2020</td>
+									<td>200<span class="mass-digit">kg</span></td>
 									<td>20.000.000đ</td>
-									<td><a href="#">View</a></td>
+									<td class="text-danger">10.000.000đ</td>
+									<td><a href="customer_details.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										Nông hộ D
+										#f753363
 									</td>
-									<td>Thôn D</td>
-									<td>0837462632</td>
-									<td>3000 <span class="mass-digit">kg</span></td>
-									<td>30.000.000đ</td>
-									<td><a href="#">View</a></td>
+									<td>3/9/2020</td>
+									<td>200<span class="mass-digit">kg</span></td>
+									<td>20.000.000đ</td>
+									<td class="text-danger">10.000.000đ</td>
+									<td><a href="customer_details.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										Nông hộ E
+										#f753363
 									</td>
-									<td>Thôn E</td>
-									<td>0837462632</td>
-									<td>3000 <span class="mass-digit">kg</span></td>
+									<td>3/9/2020</td>
+									<td>200<span class="mass-digit">kg</span></td>
 									<td>20.000.000đ</td>
-									<td><a href="#">View</a></td>
-								</tr>
-								<tr>
+									<td class="text-danger">10.000.000đ</td>
+									<td><a href="customer_details.html">View</a></td>
+                </tr>
+                <tr>
 									<td>
-										Nông hộ F
+										#f753363
 									</td>
-									<td>Thôn F</td>
-									<td>0837462632</td>
-									<td>4000 <span class="mass-digit">kg</span></td>
+									<td>3/9/2020</td>
+									<td>200<span class="mass-digit">kg</span></td>
 									<td>20.000.000đ</td>
-									<td><a href="#">View</a></td>
+									<td class="text-danger">10.000.000đ</td>
+									<td><a href="customer_details.html">View</a></td>
 								</tr>
 							</tbody>
+							<tfoot class="tfoot-light">
+								<tr>
+									<td class="font-weight-bold">Tổng</td>
+									<td>-</td>
+									<td>500kg</td>
+									<td>120.000.000đ</td>
+									<td class="text-danger">60.000.000đ</td>
+									<td>-</td>
+								</tr>
+							</tfoot>
 						</table>
-					</div>
-					<!-- add new customer section -->
-					<div class="add-new-customer">
-						<button
-							class="btn btn-primary"
-							data-toggle="modal"
-							data-target="#add-customer"
-							type="button"
-						>
-							Thêm khách hàng
-						</button>
-
-						<div class="modal" id="add-customer">
-							<div class="modal-dialoge">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h4 class="modal-title">Thêm mới khách hàng</h4>
-										<button type="button" data-dismiss="modal">&times;</button>
-									</div>
-									<div class="modal-body">
-										<form action="" class="form-group-add-customer">
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder="Tên nông hộ"
-												/>
-											</div>
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder="Địa chỉ"
-												/>
-											</div>
-											<div class="form-group">
-												<input
-													type="text"
-													class="form-control"
-													placeholder="Số điện thoại"
-												/>
-											</div>
-											<input
-												type="submit"
-												class="btn btn-success d-block m-auto"
-												value="Thêm"
-											/>
-										</form>
-									</div>
-									<div class="modal-footer">
-										<button
-											type="button"
-											class="btn btn-secondary"
-											data-dismiss="modal"
-										>
-											Đóng
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</main>
