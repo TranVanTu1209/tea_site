@@ -1,0 +1,236 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+			integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Danh sách loại chè | Admin</title>
+	</head>
+	<body>
+		<!-- admin home page -->
+		<section id="list-type-tea" class="home-page">
+			<aside class="left-content">
+				<nav class="navbar bg-navbar ">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Danh sách khách hàng</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link current" href="list_type_tea.html">Danh sách loại chè</a>
+						</li>
+						<li class="dropdown nav-link">
+							<a type="button" class="dropdown-toggle" data-toggle="dropdown"
+								>Kiểm soát công nợ</a
+							>
+							<div class="dropdown-menu bg-navbar">
+								<a class="dropdown-item" href="#">Chưa thanh toán</a>
+								<a class="dropdown-item" href="#">Đã thanh toán</a>
+							</div>
+						</li>
+						<li class="dropdown nav-link">
+							<a type="button" class="dropdown-toggle" data-toggle="dropdown">
+								Báo cáo
+							</a>
+							<div class="dropdown-menu bg-navbar">
+								<a class="dropdown-item" href="#">Báo cáo ngày</a>
+								<a class="dropdown-item" href="#">Báo cáo tuần</a>
+								<a class="dropdown-item" href="#">Báo cáo tháng</a>
+								<a class="dropdown-item" href="#">Báo cáo năm</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<main class="right-content list-tea-content">
+				<!-- user info section -->
+				<div class="user-wrap">
+					<div class="user-info">
+						<a type="button" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fas fa-user-shield"></i> Admin</a
+						>
+						<div class="dropdown-menu">
+							<div>
+								<i class="fas fa-phone-alt"></i>
+								<span class="admin-phone-number"> 0946284647</span>
+							</div>
+							<div class="py-1">
+								Quản trị viên
+							</div>
+							<a href="signin.html">Đăng xuất</a>
+						</div>
+					</div>
+				</div>
+        
+				<!-- table info section -->
+				<div class="container text-center mt-5">
+          <h3 class="list-tea-header text-left py-2">
+          Danh sách các loại chè có sẵn
+        </h3>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Các loại chè</th>
+								<th>Đơn giá (vnđ/kg)</th>
+								<th>Khấu trừ tối đa(%)</th>
+								<th>Ngày áp dụng giá</th>
+								<th>Chỉnh sửa</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Chè búp 1</th>
+								<td>100.000đ</td>
+								<td>35%</td>
+								<td>03/08/2020</td>
+								<td>
+									<button
+										type="button"
+										class="dropdown-toggle text-primary"
+										data-toggle="dropdown"
+									>
+										<i class="fas fa-edit"></i>
+                </button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Xóa loại chè</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Chè búp 2</th>
+								<td>200.000đ</td>
+								<td>15%</td>
+								<td>03/08/2020</td>
+								<td>
+									<button
+										type="button"
+										class="dropdown-toggle text-primary"
+										data-toggle="dropdown"
+									>
+										<i class="fas fa-edit"></i>
+                </button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Xóa loại chè</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Chè búp 3</th>
+								<td>150.000đ</td>
+								<td>35%</td>
+								<td>03/08/2020</td>
+								<td>
+									<button
+										type="button"
+										class="dropdown-toggle text-primary"
+										data-toggle="dropdown"
+									>
+										<i class="fas fa-edit"></i>
+                </button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Xóa loại chè</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Chè búp 4</th>
+								<td>100.000đ</td>
+								<td>35%</td>
+								<td>03/08/2020</td>
+								<td>
+									<button
+										type="button"
+										class="dropdown-toggle text-primary"
+										data-toggle="dropdown"
+									>
+										<i class="fas fa-edit"></i>
+                </button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Xóa loại chè</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Chè búp 5</th>
+								<td>400.000đ</td>
+								<td>35%</td>
+								<td>03/08/2020</td>
+								<td>
+									<button
+										type="button"
+										class="dropdown-toggle text-primary"
+										data-toggle="dropdown"
+									>
+										<i class="fas fa-edit"></i>
+                </button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Xóa loại chè</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Chè búp 6</th>
+								<td>500.000đ</td>
+								<td>35%</td>
+								<td>03/08/2020</td>
+								<td>
+									<button
+										type="button"
+										class="dropdown-toggle text-primary"
+										data-toggle="dropdown"
+									>
+										<i class="fas fa-edit"></i>
+                </button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Xóa loại chè</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
+										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</main>
+		</section>
+		<!-- JS  Bootsrap -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

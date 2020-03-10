@@ -1,25 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* utilities class */
 .bg-navbar {
   background-color: #0E6F38;
 }
 
 /* general */
-.current {
+a.current {
   color: #F3DC0B;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .search-box,
 input[type="date"] {
   border-radius: 20px;
   border: 1px #111 solid;
-  padding: 10px;
+  padding: 8px;
   height: 35px;
   outline: none;
 }
 
-table {
-  border-radius: 3px;
-}
 
 table .tfoot-light {
   background-color: #eee;
@@ -27,6 +32,14 @@ table .tfoot-light {
 
 table tbody a {
   color: blue;
+}
+
+table tbody a[type="button"] {
+  color: #000;
+}
+
+table tbody td {
+  padding: 0 40px;
 }
 
 a.btn-light {
@@ -38,17 +51,28 @@ a.btn-light:hover {
 }
 
 /* admin -home page */
-section#home-page-admin {
+
+section.home-page {
   height: 100vh;
   display: flex;
 }
 
-section#home-page-admin aside.left-content {
-  width: 250px;
+section.home-page .right-content {
+  width: 85%;
 }
 
-section#home-page-admin aside.left-content ul {
-  height: 100vh;
+section.home-page .right-content .user-info {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+section.home-page aside.left-content {
+  width: 15%;
+}
+
+section.home-page aside.left-content ul {
+  height: 97.5vh;
   padding-top: 170px;
 }
 
@@ -56,20 +80,28 @@ a {
   color: #fff;
 }
 
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-menu li a.current {
+  color: #F3DC0B;
+}
+
 a[type="button"] {
   color: #fff;
 }
 
-section#home-page-admin aside.left-content .navbar li.dropdown .dropdown-menu a {
+section.home-page aside.left-content .navbar li.dropdown .dropdown-menu a {
   color: #fff;
 }
 
-section#home-page-admin aside.left-content .navbar li.dropdown .dropdown-menu a:hover {
+section.home-page aside.left-content .navbar li.dropdown .dropdown-menu a:hover {
   background-color: #0E6F38;
   color: #F3DC0B;
 }
 
-section#home-page-admin aside.left-content .navbar li a:hover {
+section.home-page aside.left-content .navbar li a:hover {
   color: #F3DC0B;
 }
 
@@ -80,15 +112,11 @@ section#home-page-admin main.right-content .list-customer-order-details {
   align-items: center;
 }
 
-section#home-page-admin main.right-content {
-  margin-left: 5rem;
-}
-
-section#home-page-admin main.right-content .list-customer-header .search-box {
+section.home-page main.right-content .list-customer-header .search-box {
   margin-left: 300px;
 }
 
-section#home-page-admin main.right-content .add-new-customer .modal {
+section.home-page main.right-content .add-new-customer .modal {
   width: 500px;
   margin: 2rem auto;
   margin-left: 30%;
@@ -96,17 +124,36 @@ section#home-page-admin main.right-content .add-new-customer .modal {
 
 /* admin details customer page */
 
-section#home-page-admin main.right-content .list-customer-order-details .form-group {
+section.home-page main.right-content .list-customer-order-details .form-group {
   margin-left: 150px;
   align-self: center;
+}
+
+section.home-page main.right-content .user-wrap {
+  background-color: rgba(14, 111, 56, 0.881);
+
+}
+
+section.home-page main.right-content .user-info {
+  margin-left: 87%;
+}
+
+section.home-page main.right-content .user-info a:hover {
+  color: #F3DC0B;
+}
+
+section.home-page main.right-content .user-info .dropdown-menu {
+  background-color: rgba(14, 111, 56, 0.95);
+  position: relative;
+  top: 40px;
+  color: #fff;
+  padding: 1rem;
 }
 
 /* order details page */
 #create-new-order,
 .order {
-  background-color: #0E6F38;
   height: 100vh;
-  color: #fff;
 }
 
 .order .order-header .order-header-right input {
@@ -119,10 +166,46 @@ section#home-page-admin main.right-content .list-customer-order-details .form-gr
 }
 
 .order .modal {
-  width: 40%;
-  margin: 0.5rem 5rem;
+  width: 30%;
+  margin: 0.5rem 10rem;
+  margin-left: 40%;
 }
 
 #change-order .order-footer .modal {
   margin-top: 400px;
+}
+
+/* accountant home page */
+#list-type-tea table button[type="button"] {
+  border: none;
+  padding: 0.2rem;
+  outline: none;
+}
+
+.right-content .row a.btn
+ {
+  position: relative;
+  left: 80px;
+}
+.right-content .row input {
+  position: relative;
+  left: 150px;
+}
+
+/* sign in - sign up */
+.sign {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sign .logo img {
+  width: 200px;
+}
+
+.sign .sign-box {
+  background-color: rgb(54, 160, 226);
+  border-radius: 3px;
+  height: 70vh;
+  margin-top: 3rem;
+  width: 90%;
 }
