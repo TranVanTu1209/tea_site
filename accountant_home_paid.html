@@ -18,7 +18,8 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
-		<title>Phần mềm quản lý thu mua chè | Kế toán</title>
+		<link rel="stylesheet" href="./css/tablets.css">
+		<title>Danh sách đã thanh toán | Kế toán</title>
 	</head>
 	<body>
 		<!-- nav-sidebar -->
@@ -57,10 +58,14 @@
 								Báo cáo
 							</a>
 							<div class="dropdown-menu bg-navbar">
-								<a class="dropdown-item" href="#">Báo cáo ngày</a>
-								<a class="dropdown-item" href="#">Báo cáo tuần</a>
-								<a class="dropdown-item" href="#">Báo cáo tháng</a>
-								<a class="dropdown-item" href="#">Báo cáo năm</a>
+								<a class="dropdown-item" href="report_day.html">Báo cáo ngày</a>
+								<a class="dropdown-item" href="report_week.html"
+									>Báo cáo tuần</a
+								>
+								<a class="dropdown-item" href="report_month.html"
+									>Báo cáo tháng</a
+								>
+								<a class="dropdown-item" href="report_year.html">Báo cáo năm</a>
 							</div>
 						</li>
 					</ul>
@@ -96,6 +101,9 @@
 							<thead class="thead-light">
 								<tr>
 									<th>
+										Mã đơn
+									</th>
+									<th>
 										Nông hộ
 									</th>
 									<th>
@@ -105,73 +113,83 @@
 										Tổng khối lượng
 									</th>
 									<th>
-										Thành tiền
+										Khối lượng sau khấu trừ
 									</th>
-									<th>
-										Tổng nợ
-									</th>
+									<th>Thành tiền</th>
 									<th>
 										Chi tiết
 									</th>
 								</tr>
 							</thead>
-							<tbody>
+								<tbody>
 								<tr>
 									<td>
-										Nguyễn Mạnh Hùng
+										#f875438
 									</td>
-									<td>Nguyễn Mạnh Hùng</td>
+									<td>Trần Văn Tú</td>
 									<td>Thôn A</td>
 									<td>4000 <span class="mass-digit">kg</span></td>
 									<td>20kg</td>
 									<td>150.000đ</td>
-									<td><a href="order_payment.html">View</a></td>
+									<td><a href="order_paid.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										#f448457
+										#f875438
 									</td>
-									<td>Nguyễn Văn B</td>
-									<td>Thôn B</td>
-									<td>2000 <span class="mass-digit">kg</span></td>
+									<td>Trần Văn Tú</td>
+									<td>Thôn A</td>
+									<td>4000 <span class="mass-digit">kg</span></td>
 									<td>20kg</td>
 									<td>150.000đ</td>
-									<td><a href="#">View</a></td>
+									<td><a href="order_paid.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										#f448457
+										#f875438
 									</td>
-									<td>Nguyễn Văn B</td>
-									<td>Thôn B</td>
-									<td>2000 <span class="mass-digit">kg</span></td>
+									<td>Trần Văn Tú</td>
+									<td>Thôn A</td>
+									<td>4000 <span class="mass-digit">kg</span></td>
 									<td>20kg</td>
 									<td>150.000đ</td>
-									<td><a href="#">View</a></td>
+									<td><a href="order_paid.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										#f448457
+										#f875438
 									</td>
-									<td>Nguyễn Văn C</td>
-									<td>Thôn C</td>
-									<td>2000 <span class="mass-digit">kg</span></td>
+									<td>Trần Văn Tú</td>
+									<td>Thôn A</td>
+									<td>4000 <span class="mass-digit">kg</span></td>
 									<td>20kg</td>
 									<td>150.000đ</td>
-									<td><a href="#">View</a></td>
+									<td><a href="order_paid.html">View</a></td>
 								</tr>
 								<tr>
 									<td>
-										#f448457
+										#f875438
 									</td>
-									<td>Nguyễn Văn E</td>
-									<td>Thôn E</td>
-									<td>2000 <span class="mass-digit">kg</span></td>
+									<td>Trần Văn Tú</td>
+									<td>Thôn A</td>
+									<td>4000 <span class="mass-digit">kg</span></td>
 									<td>20kg</td>
 									<td>150.000đ</td>
-									<td><a href="#">View</a></td>
+									<td><a href="order_paid.html">View</a></td>
 								</tr>
-							</tbody>
+								<tr>
+									<td>
+										#f875438
+									</td>
+									<td>Trần Văn Tú</td>
+									<td>Thôn A</td>
+									<td>4000 <span class="mass-digit">kg</span></td>
+									<td>20kg</td>
+									<td>150.000đ</td>
+									<td><a href="order_paid.html">View</a></td>
+								</tr>
+								</tbody>
+							
 							<tfoot class="tfoot-light">
 								<tr>
 									<td class="font-weight-bold">Tổng</td>

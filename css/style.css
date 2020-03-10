@@ -72,8 +72,11 @@ section.home-page aside.left-content {
 }
 
 section.home-page aside.left-content ul {
-  height: 97.5vh;
+  height: 100vh;
   padding-top: 170px;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 a {
@@ -129,13 +132,17 @@ section.home-page main.right-content .list-customer-order-details .form-group {
   align-self: center;
 }
 
+section.home-page {
+  height: 100vh;
+}
+
 section.home-page main.right-content .user-wrap {
   background-color: rgba(14, 111, 56, 0.881);
 
 }
 
 section.home-page main.right-content .user-info {
-  margin-left: 87%;
+  margin-left: 84%;
 }
 
 section.home-page main.right-content .user-info a:hover {
@@ -182,11 +189,11 @@ section.home-page main.right-content .user-info .dropdown-menu {
   outline: none;
 }
 
-.right-content .row a.btn
- {
+.right-content .row a.btn {
   position: relative;
   left: 80px;
 }
+
 .right-content .row input {
   position: relative;
   left: 150px;
@@ -208,4 +215,8 @@ section.home-page main.right-content .user-info .dropdown-menu {
   height: 70vh;
   margin-top: 3rem;
   width: 90%;
+}
+
+#create-new-order .order-header .order-header-left input[type="datetime-local"] {
+  width: 11.3rem;
 }

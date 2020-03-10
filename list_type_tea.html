@@ -48,10 +48,14 @@
 								Báo cáo
 							</a>
 							<div class="dropdown-menu bg-navbar">
-								<a class="dropdown-item" href="#">Báo cáo ngày</a>
-								<a class="dropdown-item" href="#">Báo cáo tuần</a>
-								<a class="dropdown-item" href="#">Báo cáo tháng</a>
-								<a class="dropdown-item" href="#">Báo cáo năm</a>
+								<a class="dropdown-item" href="report_day.html">Báo cáo ngày</a>
+								<a class="dropdown-item" href="report_week.html"
+									>Báo cáo tuần</a
+								>
+								<a class="dropdown-item" href="report_month.html"
+									>Báo cáo tháng</a
+								>
+								<a class="dropdown-item" href="report_year.html">Báo cáo năm</a>
 							</div>
 						</li>
 					</ul>
@@ -194,7 +198,129 @@
 														<form action="">
 															<input
 																type="submit"
-																value="Xóa"
+																value="Xác nhận"
+																class="btn btn-primary m-auto d-block"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+								<!--  -->
+							</tr>
+							<tr>
+								<td>Chè búp 2</td>
+								<td>200.000đ</td>
+								<td>15%</td>
+								<td>03/5/2020</td>
+								<td>
+									<div class="container d-inline">
+										<button
+											class="change-btn"
+											type="button"
+											data-toggle="modal"
+											data-target="#change-tea-type"
+										>
+											<i class="fas fa-edit text-primary"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="change-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Thay đổi thông tin loại chè
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Giá chỉnh sửa"
+																/>
+															</div>
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Khấu trừ tối đa"
+																/>
+															</div>
+
+															<div class="form-group">
+																<label for="date-apply">Ngày áp dụng</label>
+																<input
+																	id="date-apply"
+																	type="datetime-local"
+																	class="form-control"
+																/>
+															</div>
+															<input
+																type="submit"
+																value="Chỉnh sửa"
+																class="btn btn-primary"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container d-inline">
+										<button
+											class="delete-btn text-danger"
+											type="button"
+											data-target="#delete-tea-type"
+											data-toggle="modal"
+										>
+											<i class="fas fa-trash-alt"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="delete-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Xóa loại chè này
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<input
+																type="submit"
+																value="Xác nhận"
 																class="btn btn-primary m-auto d-block"
 															/>
 														</form>
@@ -215,102 +341,486 @@
 								</td>
 							</tr>
 							<tr>
-								<th>Chè búp 2</th>
-								<td>200.000đ</td>
-								<td>15%</td>
-								<td>03/5/2020</td>
-								<td>
-									<button
-										type="button"
-										class="dropdown-toggle text-primary"
-										data-toggle="dropdown"
-									>
-										<i class="fas fa-edit"></i>
-									</button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Xóa loại chè</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>Chè búp 3</th>
+								<td>Chè búp 3</td>
 								<td>150.000đ</td>
-								<td>35%</td>
-								<td>03/08/2020</td>
+								<td>15%</td>
+								<td>03/03/2020</td>
 								<td>
-									<button
-										type="button"
-										class="dropdown-toggle text-primary"
-										data-toggle="dropdown"
-									>
-										<i class="fas fa-edit"></i>
-									</button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Xóa loại chè</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									<div class="container d-inline">
+										<button
+											class="change-btn"
+											type="button"
+											data-toggle="modal"
+											data-target="#change-tea-type"
+										>
+											<i class="fas fa-edit text-primary"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="change-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Thay đổi thông tin loại chè
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Giá chỉnh sửa"
+																/>
+															</div>
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Khấu trừ tối đa"
+																/>
+															</div>
+
+															<div class="form-group">
+																<label for="date-apply">Ngày áp dụng</label>
+																<input
+																	id="date-apply"
+																	type="datetime-local"
+																	class="form-control"
+																/>
+															</div>
+															<input
+																type="submit"
+																value="Chỉnh sửa"
+																class="btn btn-primary"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container d-inline">
+										<button
+											class="delete-btn text-danger"
+											type="button"
+											data-target="#delete-tea-type"
+											data-toggle="modal"
+										>
+											<i class="fas fa-trash-alt"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="delete-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Xóa loại chè này
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<input
+																type="submit"
+																value="Xác nhận"
+																class="btn btn-primary m-auto d-block"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<th>Chè búp 4</th>
-								<td>100.000đ</td>
-								<td>35%</td>
+								<td>Chè búp 4</td>
+								<td>130.000đ</td>
+								<td>5%</td>
 								<td>03/08/2020</td>
 								<td>
-									<button
-										type="button"
-										class="dropdown-toggle text-primary"
-										data-toggle="dropdown"
-									>
-										<i class="fas fa-edit"></i>
-									</button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Xóa loại chè</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									<div class="container d-inline">
+										<button
+											class="change-btn"
+											type="button"
+											data-toggle="modal"
+											data-target="#change-tea-type"
+										>
+											<i class="fas fa-edit text-primary"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="change-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Thay đổi thông tin loại chè
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Giá chỉnh sửa"
+																/>
+															</div>
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Khấu trừ tối đa"
+																/>
+															</div>
+
+															<div class="form-group">
+																<label for="date-apply">Ngày áp dụng</label>
+																<input
+																	id="date-apply"
+																	type="datetime-local"
+																	class="form-control"
+																/>
+															</div>
+															<input
+																type="submit"
+																value="Chỉnh sửa"
+																class="btn btn-primary"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container d-inline">
+										<button
+											class="delete-btn text-danger"
+											type="button"
+											data-target="#delete-tea-type"
+											data-toggle="modal"
+										>
+											<i class="fas fa-trash-alt"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="delete-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Xóa loại chè này
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<input
+																type="submit"
+																value="Xác nhận"
+																class="btn btn-primary m-auto d-block"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<th>Chè búp 5</th>
-								<td>400.000đ</td>
-								<td>35%</td>
-								<td>03/08/2020</td>
+								<td>Chè búp 5</td>
+								<td>800.000đ</td>
+								<td>25%</td>
+								<td>03/1/2020</td>
 								<td>
-									<button
-										type="button"
-										class="dropdown-toggle text-primary"
-										data-toggle="dropdown"
-									>
-										<i class="fas fa-edit"></i>
-									</button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Xóa loại chè</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									<div class="container d-inline">
+										<button
+											class="change-btn"
+											type="button"
+											data-toggle="modal"
+											data-target="#change-tea-type"
+										>
+											<i class="fas fa-edit text-primary"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="change-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Thay đổi thông tin loại chè
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Giá chỉnh sửa"
+																/>
+															</div>
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Khấu trừ tối đa"
+																/>
+															</div>
+
+															<div class="form-group">
+																<label for="date-apply">Ngày áp dụng</label>
+																<input
+																	id="date-apply"
+																	type="datetime-local"
+																	class="form-control"
+																/>
+															</div>
+															<input
+																type="submit"
+																value="Chỉnh sửa"
+																class="btn btn-primary"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container d-inline">
+										<button
+											class="delete-btn text-danger"
+											type="button"
+											data-target="#delete-tea-type"
+											data-toggle="modal"
+										>
+											<i class="fas fa-trash-alt"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="delete-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Xóa loại chè này
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<input
+																type="submit"
+																value="Xác nhận"
+																class="btn btn-primary m-auto d-block"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<th>Chè búp 6</th>
-								<td>500.000đ</td>
-								<td>35%</td>
+								<td>Chè búp 6</td>
+								<td>50.000đ</td>
+								<td>30%</td>
 								<td>03/08/2020</td>
 								<td>
-									<button
-										type="button"
-										class="dropdown-toggle text-primary"
-										data-toggle="dropdown"
-									>
-										<i class="fas fa-edit"></i>
-									</button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Xóa loại chè</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									<div class="container d-inline">
+										<button
+											class="change-btn"
+											type="button"
+											data-toggle="modal"
+											data-target="#change-tea-type"
+										>
+											<i class="fas fa-edit text-primary"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="change-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Thay đổi thông tin loại chè
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Giá chỉnh sửa"
+																/>
+															</div>
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Khấu trừ tối đa"
+																/>
+															</div>
+
+															<div class="form-group">
+																<label for="date-apply">Ngày áp dụng</label>
+																<input
+																	id="date-apply"
+																	type="datetime-local"
+																	class="form-control"
+																/>
+															</div>
+															<input
+																type="submit"
+																value="Chỉnh sửa"
+																class="btn btn-primary"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container d-inline">
+										<button
+											class="delete-btn text-danger"
+											type="button"
+											data-target="#delete-tea-type"
+											data-toggle="modal"
+										>
+											<i class="fas fa-trash-alt"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="delete-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Xóa loại chè này
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<input
+																type="submit"
+																value="Xác nhận"
+																class="btn btn-primary m-auto d-block"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</td>
 							</tr>
