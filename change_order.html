@@ -143,11 +143,21 @@
 						</div>
 						<!-- info customer -->
 						<div class="order-header-right customer-info">
-							<div class="customer-name">Tên nông hộ : Trần Đại Nghĩa</div>
-							<div class="customer-phone-number py-2">
-								Số điện thoại: 0726828733
+							<div>
+								Tên nông hộ :
+								<span class="customer-name">
+									Trần Đại Nghĩa
+								</span>
 							</div>
-							<div class="customer-address">Địa chỉ : Thôn A - Yên Bái</div>
+							<div class="py-2">
+								Số điện thoại:
+								<span class="customer-phone-number">
+									0726828733
+								</span>
+							</div>
+							<div>
+								Địa chỉ : <span class="user-address">Thôn A - Yên Bái</span>
+							</div>
 						</div>
 					</div>
 					<!-- order body -->
@@ -235,83 +245,52 @@
 					</div>
 					<!-- order footer -->
 					<div class="order-footer">
-						
 						<td>
-									<div class="container d-inline">
-										<a class="btn btn-success change-info" href="save_list_order.html"
-										data-toggle=""
-										>
-										Chỉnh sửa
-										</a>
-										<button
-											class="change-btn"
-											type="button"
-											data-toggle="modal"
-											data-target="#change-tea-type"
-										>
-											<i class="fas fa-edit text-primary"></i>
-										</button>
-										<!-- Modal -->
-										<div
-											class="modal fade text-left"
-											id="change-tea-type"
-											role="dialog"
-										>
-											<div class="modal-dialog">
-												<!-- Modal content-->
-												<div class="modal-content">
-													<div class="modal-header">
-														<h4 class="modal-title">
-															Thay đổi thông tin loại chè
-														</h4>
-													</div>
-													<div class="modal-body">
-														<form action="">
-															<div class="form-group">
-																<input
-																	type="text"
-																	class="form-control"
-																	placeholder="Giá chỉnh sửa"
-																/>
-															</div>
-															<div class="form-group">
-																<input
-																	type="text"
-																	class="form-control"
-																	placeholder="Khấu trừ tối đa"
-																/>
-															</div>
-
-															<div class="form-group">
-																<label for="date-apply">Ngày áp dụng</label>
-																<input
-																	id="date-apply"
-																	type="datetime-local"
-																	class="form-control"
-																/>
-															</div>
-															<input
-																type="submit"
-																value="Chỉnh sửa"
-																class="btn btn-primary"
-															/>
-														</form>
-													</div>
-													<div class="modal-footer">
-														<button
-															type="button"
-															class="btn btn-default"
-															data-dismiss="modal"
-														>
-															Hủy
-														</button>
-													</div>
-												</div>
+							<div class="container d-inline">
+								<a
+									class="btn btn-success text-white change-info"
+									data-toggle="modal"
+									data-target="#change-order-info"
+								>
+									Chỉnh sửa
+								</a>
+								<!-- Modal -->
+								<div
+									class="modal fade text-left"
+									id="change-order-info"
+									role="dialog"
+								>
+									<div class="modal-dialog">
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">
+													Xác nhận thay đổi đơn
+												</h4>
+											</div>
+											<div class="modal-body">
+												<form action="">
+													<input
+														type="submit"
+														class="btn btn-primary"
+														value="Gửi cho kế toán"
+													/>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button
+													type="button"
+													class="btn btn-default"
+													data-dismiss="modal"
+												>
+													Hủy
+												</button>
 											</div>
 										</div>
 									</div>
-									
-								</td>
+								</div>
+							</div>
+						</td>
 						<a
 							class="btn btn-success save-btn mx-2"
 							href="save_list_order.html"

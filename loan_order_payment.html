@@ -18,14 +18,14 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
-		<title>Thanh toán đơn | Kế toán</title>
+		<title>Thanh toán nợ | Kế toán</title>
 	</head>
 	<body>
-		<section id="pay-order" class="order home-page">
+		<section id="loan-order-payment" class="order home-page">
 			<aside class="left-content">
 				<nav class="navbar bg-navbar ">
 					<ul class="navbar-nav">
-						<li class="dropdown nav-link">
+						<li class="dropdown">
 							<a class="dropdown-toggle text-white" data-toggle="dropdown">
 								Danh sách giao dịch
 							</a>
@@ -39,13 +39,14 @@
 							</div>
 						</li>
 						<li class="dropdown nav-link">
-							<a type="button" class="dropdown-toggle" data-toggle="dropdown"
+							<a
+								type="button"
+								class="dropdown-toggle current"
+								data-toggle="dropdown"
 								>Kiểm soát công nợ</a
 							>
 							<div class="dropdown-menu bg-navbar">
-								<a class="dropdown-item" href="loan_control_main.html"
-									>Chưa thanh toán</a
-								>
+								<a class="dropdown-item" href="#">Chưa thanh toán</a>
 								<a class="dropdown-item" href="#">Đã thanh toán</a>
 							</div>
 						</li>
@@ -170,16 +171,20 @@
 						<button
 							class="btn btn-primary"
 							data-toggle="modal"
-							data-target="#order-payment"
+							data-target="#order-loan-payment"
 							type="button"
 						>
-							Thanh toán
+							Thanh toán nợ
 						</button>
-						<div class="modal fade text-dark" id="order-payment" role="dialog">
+						<div
+							class="modal fade text-dark"
+							id="order-loan-payment"
+							role="dialog"
+						>
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h4 class="modal-title">Thanh toán đơn</h4>
+										<h4 class="modal-title">Thanh toán nợ</h4>
 										<button type="button" data-dismiss="modal">
 											&times;
 										</button>
@@ -188,20 +193,19 @@
 										<form action="">
 											<div class="form-group">
 												Tổng giá trị đơn :
-												<span class="order-value"> 20.000.000đ</span>
+												<span class="order-value"> 20.000.000 đ</span>
+											</div>
+											<div class="form-group d-block">
+												Còn nợ : <span class="order-loan">10.000.000 đ</span>
 											</div>
 											<div class="form-group">
 												<label for="tea-paid-money">Tiền thanh toán : </label>
 												<input
 													type="text"
-													id="tea-paid-money"
+													id="tea-loan-money"
 													class="form-control"
 												/>
 											</div>
-											<div class="form-group d-block">
-												Còn nợ : <span class="order-loan">10.000.000 đ</span>
-											</div>
-
 											<input
 												type="submit"
 												class="btn btn-success d-block m-auto"

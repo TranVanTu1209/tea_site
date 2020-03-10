@@ -179,7 +179,7 @@ section.home-page main.right-content .user-info .dropdown-menu {
 }
 
 #change-order .order-footer .modal {
-  margin-top: 400px;
+  margin-top: 0px;
 }
 
 /* accountant home page */
@@ -217,6 +217,7 @@ section.home-page main.right-content .user-info .dropdown-menu {
   width: 90%;
 }
 
-#create-new-order .order-header .order-header-left input[type="datetime-local"] {
+#create-new-order .order-header .order-header-left input[type="datetime-local"],
+#new-transaction .order-header .order-header-left input[type="datetime-local"] {
   width: 11.3rem;
 }
