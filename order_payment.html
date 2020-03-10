@@ -167,10 +167,10 @@
 							data-target="#order-payment"
 							type="button"
 						>
-							Thanh toán <i class="fas fa-plus"></i>
+							Thanh toán 
 						</button>
-						<div class="modal text-dark" id="order-payment">
-							<div class="modal-dialoge">
+						<div class="modal fade text-dark" id="order-payment" role="dialog">
+							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h4 class="modal-title">Thanh toán đơn</h4>
@@ -181,21 +181,17 @@
 									<div class="modal-body">
 										<form action="">
 											<div class="form-group">
-												Tồng giá trị đơn :
-												<span class="order-value">20.000.000đ</span>
+												Tổng giá trị đơn :
+												<span class="order-value"> 20.000.000đ</span>
 											</div>
 											<div class="form-group">
-												<input
-													type="text"
-													id="tea-mass"
-													class="form-control"
-													placeholder="Tiền thanh toán"
-												/>
+												<label for="tea-paid-money">Tiền thanh toán : </label>
+												<input type="text" id="tea-paid-money" class="form-control" />
 											</div>
-											<div class="form-group">
+											<div class="form-group d-block">
 												Còn nợ : <span class="order-loan">10.000.000</span>
 											</div>
-
+											
 											<input
 												type="submit"
 												class="btn btn-success d-block m-auto"

@@ -30,7 +30,9 @@
 							<a class="nav-link" href="index.html">Danh sách khách hàng</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link current" href="list_type_tea.html">Danh sách loại chè</a>
+							<a class="nav-link current" href="list_type_tea.html"
+								>Danh sách loại chè</a
+							>
 						</li>
 						<li class="dropdown nav-link">
 							<a type="button" class="dropdown-toggle" data-toggle="dropdown"
@@ -74,12 +76,12 @@
 						</div>
 					</div>
 				</div>
-        
+
 				<!-- table info section -->
 				<div class="container text-center mt-5">
-          <h3 class="list-tea-header text-left py-2">
-          Danh sách các loại chè có sẵn
-        </h3>
+					<h3 class="list-tea-header text-left py-2">
+						Danh sách các loại chè có sẵn
+					</h3>
 					<table class="table">
 						<thead>
 							<tr>
@@ -92,22 +94,123 @@
 						</thead>
 						<tbody>
 							<tr>
-								<th>Chè búp 1</th>
+								<td>Chè búp 1</td>
 								<td>100.000đ</td>
 								<td>35%</td>
 								<td>03/08/2020</td>
 								<td>
-									<button
-										type="button"
-										class="dropdown-toggle text-primary"
-										data-toggle="dropdown"
-									>
-										<i class="fas fa-edit"></i>
-                </button>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Xóa loại chè</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
-										<a class="dropdown-item" href="#">Chỉnh sửa khấu trừ</a>
+									<div class="container d-inline">
+										<button
+											class="change-btn"
+											type="button"
+											data-toggle="modal"
+											data-target="#change-tea-type"
+										>
+											<i class="fas fa-edit text-primary"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="change-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Thay đổi thông tin loại chè
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Giá chỉnh sửa"
+																/>
+															</div>
+															<div class="form-group">
+																<input
+																	type="text"
+																	class="form-control"
+																	placeholder="Khấu trừ tối đa"
+																/>
+															</div>
+
+															<div class="form-group">
+																<label for="date-apply">Ngày áp dụng</label>
+																<input
+																	id="date-apply"
+																	type="datetime-local"
+																	class="form-control"
+																/>
+															</div>
+															<input
+																type="submit"
+																value="Chỉnh sửa"
+																class="btn btn-primary"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container d-inline">
+										<button
+											class="delete-btn text-danger"
+											type="button"
+											data-target="#delete-tea-type"
+											data-toggle="modal"
+										>
+											<i class="fas fa-trash-alt"></i>
+										</button>
+										<!-- Modal -->
+										<div
+											class="modal fade text-left"
+											id="delete-tea-type"
+											role="dialog"
+										>
+											<div class="modal-dialog">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title">
+															Xóa loại chè này
+														</h4>
+													</div>
+													<div class="modal-body">
+														<form action="">
+															<input
+																type="submit"
+																value="Xóa"
+																class="btn btn-primary m-auto d-block"
+															/>
+														</form>
+													</div>
+													<div class="modal-footer">
+														<button
+															type="button"
+															class="btn btn-default"
+															data-dismiss="modal"
+														>
+															Hủy
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</td>
 							</tr>
@@ -115,7 +218,7 @@
 								<th>Chè búp 2</th>
 								<td>200.000đ</td>
 								<td>15%</td>
-								<td>03/08/2020</td>
+								<td>03/5/2020</td>
 								<td>
 									<button
 										type="button"
@@ -123,7 +226,7 @@
 										data-toggle="dropdown"
 									>
 										<i class="fas fa-edit"></i>
-                </button>
+									</button>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" href="#">Xóa loại chè</a>
 										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
@@ -143,7 +246,7 @@
 										data-toggle="dropdown"
 									>
 										<i class="fas fa-edit"></i>
-                </button>
+									</button>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" href="#">Xóa loại chè</a>
 										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
@@ -163,7 +266,7 @@
 										data-toggle="dropdown"
 									>
 										<i class="fas fa-edit"></i>
-                </button>
+									</button>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" href="#">Xóa loại chè</a>
 										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
@@ -183,7 +286,7 @@
 										data-toggle="dropdown"
 									>
 										<i class="fas fa-edit"></i>
-                </button>
+									</button>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" href="#">Xóa loại chè</a>
 										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
@@ -203,7 +306,7 @@
 										data-toggle="dropdown"
 									>
 										<i class="fas fa-edit"></i>
-                </button>
+									</button>
 									<div class="dropdown-menu">
 										<a class="dropdown-item" href="#">Xóa loại chè</a>
 										<a class="dropdown-item" href="#">Chỉnh sửa giá</a>
