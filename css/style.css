@@ -207,8 +207,11 @@ section.home-page main.right-content .user-info .dropdown-menu {
 
 .sign .logo img {
   width: 200px;
+  
 }
-
+.sign .logo {
+  margin-right: 3rem;
+}
 .sign .sign-box {
   background-color: rgb(54, 160, 226);
   border-radius: 3px;
